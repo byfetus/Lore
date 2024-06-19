@@ -1,5 +1,5 @@
 <script>
-
+// Function to fullscreen
 if(document.fullscreenEnabled || document.webkitFullscreenEnabled) {
 	const toggleBtn = document.querySelector('.fullscreen-element');
 
