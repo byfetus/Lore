@@ -44,7 +44,7 @@ window.addEventListener("beforeunload", function() {
   }
 });
 
-
+}
 
 
 
