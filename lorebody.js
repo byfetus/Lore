@@ -1,4 +1,3 @@
-<script>
 
 // Function to play hover sound
 function playHoverSound() {
@@ -43,9 +42,3 @@ window.addEventListener("beforeunload", function() {
     storeSoundState("off");
   }
 });
-
-}
-
-
-
-  </script>
