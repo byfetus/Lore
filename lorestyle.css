@@ -1,6 +1,47 @@
 
 <style> 
 
+  /*************** Ink Cursor ****************/
+body {
+  cursor: none !important;
+}
+    .ninja {
+	
+        position: absolute;
+        top: 0;
+    }
+    .ink-cursor {
+	    
+        pointer-events: none;
+        position: fixed;
+        display: block;
+        border-radius: 0;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        mix-blend-mode: difference;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        -webkit-filter: url("#ninja");
+        filter: url("#ninja");
+    }
+    .ink-cursor span {
+        position: absolute;
+        display: block;
+
+        border-radius: 80px;
+        background-color: #fff;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+	          width: 25px;
+        height: 25px;
+	  transition: ease-in background-color 0.5s;
+    }
+
+
+
 .toggle-sound {
 cursor: pointer;
 }
